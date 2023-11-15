@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
     <!-- Css -->
+    <link href="assets/libs/prismjs/themes/prism-twilight.min.css" type="text/css" rel="stylesheet" />
     <!-- Main Css -->
     <link rel="stylesheet" href="assets/libs/icofont/icofont.min.css" />
     <link href="assets/libs/flatpickr/flatpickr.min.css" type="text/css" rel="stylesheet" />
@@ -421,7 +422,7 @@
                   </ul>
                 </div>
 
-                <!-- <div
+                <div
                   class="border-b border-dashed dark:border-slate-700/40 my-3 group-data-[sidebar=dark]:border-slate-700/40 group-data-[sidebar=brand]:border-slate-700/40"
                 ></div>
                 <div
@@ -1348,7 +1349,7 @@
                       </a>
                     </li>
                   </ul>
-                </div> -->
+                </div>
               </div>
             </li>
           </ul>
@@ -1586,610 +1587,993 @@
           <div class="flex flex-wrap">
             <div class="flex items-center py-4 w-full">
               <div class="w-full">
-                <div class="">
-                  <div class="flex flex-wrap justify-between">
-                    <div class="items-center">
-                      <h1 class="font-medium text-3xl block dark:text-slate-100">Ecommerce</h1>
-                      <ol class="list-reset flex text-sm">
-                        <li><a href="#" class="text-gray-500 dark:text-slate-400">Robotech</a></li>
-                        <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
-                        <li class="text-gray-500 dark:text-slate-400">Dashboard</li>
-                        <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
-                        <li class="text-primary-500 hover:text-primary-600 dark:text-primary-400">Ecommerce</li>
-                      </ol>
-                    </div>
-                    <div class="flex items-center">
-                      <div
-                        class="today-date leading-5 mt-2 lg:mt-0 form-input w-auto rounded-md border inline-block border-primary-500/60 dark:border-primary-500/60 text-primary-500 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-primary-400 focus:border-primary-500 dark:focus:border-primary-500 dark:hover:border-slate-700"
-                      >
-                        <input
-                          type="text"
-                          class="dash_date border-0 focus:border-0 focus:outline-none"
-                          readonly
-                          required=""
-                        />
-                      </div>
+                <div class="flex flex-wrap justify-between">
+                  <div class="items-center">
+                    <h1 class="font-medium text-3xl block dark:text-slate-100">Echarts</h1>
+                    <ol class="list-reset flex text-sm">
+                      <li><a href="#" class="text-gray-500 dark:text-slate-400">Robotech</a></li>
+                      <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
+                      <li class="text-gray-500 dark:text-slate-400">Charts</li>
+                      <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
+                      <li class="text-primary-500 hover:text-primary-600 dark:text-primary-400">Echarts</li>
+                    </ol>
+                  </div>
+                  <!--end /div-->
+                  <div class="flex items-center">
+                    <div
+                      class="today-date leading-5 mt-2 lg:mt-0 form-input w-auto rounded-md border inline-block border-primary-500/60 dark:border-primary-500/60 text-primary-500 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-primary-400 focus:border-primary-500 dark:focus:border-primary-500 dark:hover:border-slate-700"
+                    >
+                      <input
+                        type="text"
+                        class="dash_date border-0 focus:border-0 focus:outline-none"
+                        readonly
+                        required=""
+                      />
                     </div>
                   </div>
+                  <!--end /div-->
                 </div>
+                <!--end /div-->
               </div>
+              <!--end /div-->
             </div>
+            <!--end /div-->
           </div>
+          <!--end /div-->
         </div>
         <!--end container-->
 
-        <div class="xl:w-full min-h-[calc(100vh-138px)] relative pb-14">
-          <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
-            <div class="col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-3 xl:col-span-3">
-              <div class="bg-white shadow-sm dark:shadow-slate-700/10 dark:bg-gray-900 rounded-md w-full relative mb-4">
-                <div class="flex-auto p-4">
-                  <div class="flex justify-between xl:gap-x-2 items-cente">
-                    <div class="self-center">
-                      <p class="text-gray-800 font-semibold dark:text-slate-400 text-lg uppercase">Total orders</p>
-                      <h3 class="my-4 font-semibold text-[30px] dark:text-slate-200">14253</h3>
-                    </div>
-                    <div class="self-center">
-                      <i data-lucide="shopping-cart" class="h-16 w-16 stroke-primary-500/30"></i>
-                    </div>
-                  </div>
-                  <p class="truncate text-slate-400">
-                    <span class="text-green-500"><i class="mdi mdi-trending-up"></i>8.5%</span> New Sessions Today
-                  </p>
-                </div>
-                <!--end card-body-->
-                <div class="flex-auto p-0 overflow-hidden">
-                  <div class="flex mb-0 h-full">
-                    <div class="w-full">
-                      <div class="apexchart-wrapper">
-                        <div id="apex_column1" class="chart-gutters"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end inner-grid-->
-            </div>
-            <!--end col-->
-            <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-3">
-              <div class="bg-white shadow-sm dark:shadow-slate-700/10 dark:bg-gray-900 rounded-md w-full relative mb-4">
-                <div class="flex-auto p-4">
-                  <div class="flex justify-between xl:gap-x-2 items-cente">
-                    <div class="self-center">
-                      <p class="text-gray-800 font-semibold dark:text-slate-400 uppercase">New customers</p>
-                      <h3 class="my-4 font-semibold text-[30px] dark:text-slate-200">532</h3>
-                    </div>
-                    <div class="self-center">
-                      <i data-lucide="users" class="h-16 w-16 stroke-green/30"></i>
-                    </div>
-                  </div>
-                  <p class="truncate text-slate-400">
-                    <span class="text-red-500"><i class="mdi mdi-trending-down"></i>0.6%</span> Bounce Rate Weekly
-                  </p>
-                </div>
-                <!--end card-body-->
-                <div class="flex-auto p-0 overflow-hidden">
-                  <div class="flex mb-0 h-full">
-                    <div class="w-full">
-                      <div class="apexchart-wrapper">
-                        <div id="dash_spark_1" class="chart-gutters"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end inner-grid-->
-            </div>
-            <!--end col-->
-            <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-3">
-              <div class="bg-white shadow-sm dark:shadow-slate-700/10 dark:bg-gray-900 rounded-md w-full relative mb-4">
-                <div class="flex-auto p-4">
-                  <div class="flex justify-between xl:gap-x-2 items-cente">
-                    <div class="self-center">
-                      <p class="text-gray-800 font-semibold dark:text-slate-400 uppercase">Top coupons</p>
-                      <h3 class="my-4 font-semibold text-[30px] dark:text-slate-200">78%</h3>
-                    </div>
-                    <div class="self-center">
-                      <i data-lucide="gem" class="h-16 w-16 stroke-yellow-500/30"></i>
-                    </div>
-                  </div>
-                  <p class="truncate text-slate-400">
-                    <span class="text-green-500"><i class="mdi mdi-trending-up"></i>1.5%</span> Weekly Avg.Sessions
-                  </p>
-                </div>
-                <!--end card-body-->
-                <div class="flex-auto p-0 overflow-hidden">
-                  <div class="grid grid-cols-12">
-                    <div class="col-span-6">
-                      <div id="ana_device" class="apex-charts"></div>
-                    </div>
-                    <!--end col-->
-                    <div class="col-span-6">
-                      <ol class="list-none list-inside">
-                        <li class="-mt-1 text-slate-700 dark:text-slate-400 text-sm">
-                          <i class="icofont-caret-right text-primary-500 text-lg"></i> Sent
-                        </li>
-                        <li class="-mt-1 text-slate-700 dark:text-slate-400 text-sm">
-                          <i class="icofont-caret-right text-green-500 text-lg"></i> Opened
-                        </li>
-                        <li class="-mt-1 text-slate-700 dark:text-slate-400 text-sm">
-                          <i class="icofont-caret-right text-red-500 text-lg"></i> Not Opened
-                        </li>
-                      </ol>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end grid-->
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end inner-grid-->
-            </div>
-            <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-3">
+        <div class="xl:w-full min-h-[calc(100vh-152px)] relative pb-14">
+          <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
+            <div class="sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-6 xl:col-start-4">
               <div
-                class="bg-[#1b1b22] shadow-sm dark:shadow-slate-700/10 dark:bg-gray-900 rounded-md w-full relative mb-4"
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
               >
-                <div class="flex-auto p-4">
-                  <div class="flex justify-between xl:gap-x-2 items-cente">
-                    <div class="self-center">
-                      <p class="text-gray-300 font-semibold dark:text-slate-400 uppercase">Total Revenue</p>
-                      <h3 class="my-4 font-semibold text-[30px] text-slate-200">$85000</h3>
-                    </div>
-                    <div class="self-center">
-                      <i data-lucide="dollar-sign" class="h-16 w-16 stroke-[#2ecee1]/30"></i>
-                    </div>
-                  </div>
-                  <p class="truncate text-slate-400">
-                    <span class="text-green-500"><i class="mdi mdi-trending-up"></i>10.5%</span> Completions Weekly
-                  </p>
-                </div>
-                <!--end card-body-->
-                <div class="flex-auto p-4 pt-0 -mt-1">
-                  <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
-                    <div class="col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-6 xl:col-span-3">
-                      <img src="assets/images/widgets/wallet.png" alt="" class="w-full h-auto" />
-                    </div>
-                    <div
-                      class="col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-6 xl:col-span-8 text-end self-center"
-                    >
-                      <button
-                        class="px-4 py-1 font-medium text-white transition duration-200 ease-in-out delay-200 skew-y-6 bg-brand-600 border-b-4 border-brand-700 rounded shadow-lg shadow-brand-600/50 hover:skew-y-0 hover:border-brand-700"
-                      >
-                        Withdrawal
-                      </button>
-                      <!-- <button class="px-2 py-1 bg-brand-500 border border-transparent collapse:bg-green-100 text-white text-sm rounded hover:bg-brand-600 hover:text-white">Withdrawal</button> -->
-                    </div>
-                  </div>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end inner-grid-->
-            </div>
-            <!--end col-->
-          </div>
-          <!--end grid-->
-
-          <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
-            <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4">
-              <div class="w-full relative mb-4">
-                <div class="flex-auto p-4">
-                  <div class="grid grid-cols-12 gap-4">
-                    <div class="col-span-12 sm:col-span-4">
-                      <img src="assets/images/widgets/user.png" alt="" class="h-auto w-full" />
-                    </div>
-                    <!--end col-->
-                    <div class="col-span-12 sm:col-span-8 self-center">
-                      <h4 class="font-medium flex-1 self-center mb-2 md:mb-0 dark:text-slate-400 text-xl">
-                        A Guide to Analyze and Optimize Your Online Business
-                      </h4>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end grid-->
-
-                  <div class="border-b border-dashed border-slate-300 dark:border-slate-700/40 my-3"></div>
-                  <div class="grid grid-cols-12 gap-4 mb-8">
-                    <div class="col-span-12 sm:col-span-6">
-                      <div id="email_report" class="apex-charts -mb-4"></div>
-                    </div>
-                    <!--end col-->
-                    <div class="col-span-12 sm:col-span-6 self-center">
-                      <ol class="list-none list-inside mb-3">
-                        <li class="mb-1 text-slate-700 dark:text-slate-400 text-sm">
-                          <i class="icofont-ui-play me-2 text-brand-500"></i> Tablet
-                        </li>
-                        <li class="mb-1 text-slate-700 dark:text-slate-400 text-sm">
-                          <i class="icofont-ui-play me-2 text-yellow-400"></i> Desktop
-                        </li>
-                        <li class="mb-1 text-slate-700 dark:text-slate-400 text-sm">
-                          <i class="icofont-ui-play me-2 text-[#13939c]"></i> Moble
-                        </li>
-                      </ol>
-                      <button
-                        type="button"
-                        class="inline-block shadow-sm dark:shadow-slate-700/10 focus:outline-none text-slate-600 hover:bg-brand-500 hover:text-white bg-transparent border border-slate-300 dark:bg-transparent dark:text-slate-400 dark:hover:text-white dark:border-gray-700 dark:hover:bg-brand-500 text-sm font-medium py-1 px-3 rounded"
-                      >
-                        View Details <i class="mdi mdi-arrow-right"></i>
-                      </button>
-                    </div>
-                    <!--end col-->
-                  </div>
-                  <!--end grid-->
-                  <h6
-                    class="bg-brand-400/5 shadow-sm dark:shadow-slate-700/10 border border-dashed dark:text-brand-300 border-brand dark:bg-slate-700/40 py-3 px-2 rounded-md text-center text-brand-500 font-medium mt-3"
-                  >
-                    <i class="ti ti-calendar self-center text-lg mr-1"></i>
-                    01 January 2023 to 31 December 2024
-                  </h6>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-            </div>
-            <!--end col-->
-            <div class="col-span-12 sm:col-span-12 md:col-span-6 lg:col-span-8 xl:col-span-8">
-              <div class="w-full relative mb-4">
-                <div
-                  class="border-b border-dashed border-slate-200 dark:border-slate-700 py-3 px-4 dark:text-slate-300/70"
-                >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
                   <div class="flex-none md:flex">
-                    <h4 class="font-medium flex-1 self-center mb-2 md:mb-0 text-xxl">Sales Report</h4>
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Line Chart-1</h4>
                     <div class="dropdown inline-block">
                       <button
-                        data-fc-autoclose="both"
-                        data-fc-type="dropdown"
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-1"
                         class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                         type="button"
                       >
-                        This Month
-                        <i class="fas fa-chevron-down text-xs ml-2"></i>
+                        <i class="fas fa-code text-xs me-2"></i> Code
                       </button>
-                      <!-- Dropdown menu -->
-                      <div
-                        class="right-auto md:right-0 hidden z-10 w-28 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
-                      >
-                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
-                          <li>
-                            <a
-                              href="#"
-                              class="block py-2 px-4 hover:bg-gray-50 dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Today</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="block py-2 px-4 hover:bg-gray-50 dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Last Week</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="block py-2 px-4 hover:bg-gray-50 dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Last Month</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="block py-2 px-4 hover:bg-gray-50 dark:hover:bg-gray-600 dark:hover:text-white"
-                              >This Year</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="flex-auto p-4">
-                  <div id="crm-dash" class="apex-charts mt-5"></div>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end inner-grid-->
-            </div>
-            <!--end col-->
-          </div>
-          <!--end grid-->
-          <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">
-            <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
-              <div class="bg-white shadow-sm dark:shadow-slate-700/10 dark:bg-gray-900 rounded-md w-full relative">
-                <div
-                  class="border-b border-dashed border-slate-200 dark:border-slate-700 py-4 px-4 dark:text-slate-300/70"
-                >
-                  <h4 class="font-medium flex-1 self-center mb-2 md:mb-0 text-xxl">Earnings Reports</h4>
-                  <p class="text-sm text-slate-400">
-                    Earnings Reports Last Week
-                    <span
-                      class="focus:outline-none text-[11px] bg-brand-500/10 text-brand-500 dark:text-brand-300 rounded font-medium py-[2px] px-2"
-                      >$18532</span
-                    >
-                  </p>
                 </div>
                 <!--end header-title-->
-                <div class="grid grid-cols-1 p-4">
-                  <div class="sm:-mx-6 lg:-mx-8">
-                    <div class="relative overflow-x-auto block w-full sm:px-6 lg:px-8">
-                      <table class="w-full">
-                        <thead class="bg-brand-400/10 dark:bg-slate-700/20">
-                          <tr>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Date
-                            </th>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Item Count
-                            </th>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Tex
-                            </th>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Earnings
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <!-- 1 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base text-gray-600 whitespace-nowrap dark:text-gray-400">01 January</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">50</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span class="text-red-500">$70</span>
-                            </td>
-                            <td class="p-3 text-base text-gray-700 whitespace-nowrap dark:text-gray-400">
-                              <span class="font-semibold">$15,000</span>
-                            </td>
-                          </tr>
-                          <!-- 2 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base text-gray-600 whitespace-nowrap dark:text-gray-400">02 January</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">25</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span class="text-slate-100">-</span>
-                            </td>
-                            <td class="p-3 text-base text-gray-700 whitespace-nowrap dark:text-gray-400">
-                              <span class="font-semibold">$15,000</span>
-                            </td>
-                          </tr>
-                          <!-- 3 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base text-gray-600 whitespace-nowrap dark:text-gray-400">03 January</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">65</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span class="text-red-500">$115</span>
-                            </td>
-                            <td class="p-3 text-base text-gray-700 whitespace-nowrap dark:text-gray-400">
-                              <span class="font-semibold">$35,000</span>
-                            </td>
-                          </tr>
-                          <!-- 4 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base text-gray-600 whitespace-nowrap dark:text-gray-400">04 January</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">20</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span class="text-slate-500">-</span>
-                            </td>
-                            <td class="p-3 text-base text-gray-700 whitespace-nowrap dark:text-gray-400">
-                              <span class="font-semibold">$8,500</span>
-                            </td>
-                          </tr>
-                          <!-- 5 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base text-gray-600 whitespace-nowrap dark:text-gray-400">05 January</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">20</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span class="text-slate-500">-</span>
-                            </td>
-                            <td class="p-3 text-base text-gray-700 whitespace-nowrap dark:text-gray-400">
-                              <span class="font-semibold">$8,500</span>
-                            </td>
-                          </tr>
-                          <!-- 6 -->
-                          <tr class="bg-white dark:bg-gray-900">
-                            <td class="p-3 text-base text-gray-600 whitespace-nowrap dark:text-gray-400">06 January</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">40</td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span class="text-red-500">$60</span>
-                            </td>
-                            <td class="p-3 text-base text-gray-700 whitespace-nowrap dark:text-gray-400">
-                              <span class="font-semibold">$12,000</span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+                <div class="flex-auto p-4">
+                  <div id="line_1" class="h-80"></div>
                 </div>
                 <!--end card-body-->
+
+                <div
+                  id="Echarts-1"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+     &lt;div id=&quot;line_1&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    
+    var chartDom = document.getElementById('line_1');
+     var myChart = echarts.init(chartDom);
+     var option;
+     
+     const colors = ['#5470C6', '#EE6666'];
+     option = {
+       color: colors,
+       tooltip: {
+         trigger: 'none',
+         axisPointer: {
+           type: 'cross'
+         }
+       },
+       legend: {},
+       grid: {
+         top: 70,
+         bottom: 50
+       },
+       xAxis: [
+         {
+           type: 'category',
+           axisTick: {
+             alignWithLabel: true
+           },
+           axisLine: {
+             onZero: false,
+             lineStyle: {
+               color: colors[1]
+             }
+           },
+           axisPointer: {
+             label: {
+               formatter: function (params) {
+                 return (
+                   'Precipitation  ' +
+                   params.value +
+                   (params.seriesData.length ? '&Atilde;&macr;&Acirc;&frac14;&Aring;&iexcl;' + params.seriesData[0].data : '')
+                 );
+               }
+             }
+           },
+           // prettier-ignore
+           data: ['2016-1', '2016-2', '2016-3', '2016-4', '2016-5', '2016-6', '2016-7', '2016-8', '2016-9', '2016-10', '2016-11', '2016-12']
+         },
+         {
+           type: 'category',
+           axisTick: {
+             alignWithLabel: true
+           },
+           axisLine: {
+             onZero: false,
+             lineStyle: {
+               color: colors[0]
+             }
+           },
+           axisPointer: {
+             label: {
+               formatter: function (params) {
+                 return (
+                   'Precipitation  ' +
+                   params.value +
+                   (params.seriesData.length ? '&Atilde;&macr;&Acirc;&frac14;&Aring;&iexcl;' + params.seriesData[0].data : '')
+                 );
+               }
+             }
+           },
+           // prettier-ignore
+           data: ['2015-1', '2015-2', '2015-3', '2015-4', '2015-5', '2015-6', '2015-7', '2015-8', '2015-9', '2015-10', '2015-11', '2015-12']
+         }
+       ],
+       yAxis: [
+         {
+           type: 'value'
+         }
+       ],
+       series: [
+         {
+           name: 'Precipitation(2015)',
+           type: 'line',
+           xAxisIndex: 1,
+           smooth: true,
+           emphasis: {
+             focus: 'series'
+           },
+           data: [
+             2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3
+           ]
+         },
+         {
+           name: 'Precipitation(2016)',
+           type: 'line',
+           smooth: true,
+           emphasis: {
+             focus: 'series'
+           },
+           data: [
+             3.9, 5.9, 11.1, 18.7, 48.3, 69.2, 231.6, 46.6, 55.4, 18.4, 10.3, 0.7
+           ]
+         }
+       ]
+     };
+     
+     option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
               </div>
               <!--end card-->
-            </div>
-            <!--end col-->
-            <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
-              <div class="bg-white shadow-sm dark:shadow-slate-700/10 dark:bg-gray-900 rounded-md w-full relative">
-                <div
-                  class="border-b border-dashed border-slate-200 dark:border-slate-700 py-4 px-4 dark:text-slate-300/70"
-                >
-                  <h4 class="font-medium flex-1 self-center mb-2 md:mb-0 text-xxl">Most Populer Products</h4>
-                  <p class="text-sm text-slate-400">
-                    New Products Last Week
-                    <span
-                      class="focus:outline-none text-[11px] bg-brand-500/10 text-brand-500 dark:text-brand-300 rounded font-medium py-[2px] px-2"
-                      >5</span
-                    >
-                  </p>
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Line Chart-2</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-2"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <!--end header-title-->
-                <div class="grid grid-cols-1 p-4">
-                  <div class="sm:-mx-6 lg:-mx-8">
-                    <div class="relative overflow-x-auto block w-full sm:px-6 lg:px-8">
-                      <table class="w-full">
-                        <thead class="bg-brand-400/10 dark:bg-slate-700/20">
-                          <tr>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Product
-                            </th>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Price
-                            </th>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Sell
-                            </th>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Status
-                            </th>
-                            <th
-                              scope="col"
-                              class="p-3 text-base font-medium tracking-wider text-start text-gray-700 uppercase dark:text-gray-400"
-                            >
-                              Action
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <!-- 1 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base font-medium whitespace-nowrap dark:text-white">
-                              <img src="assets/images/products/01.png" alt="" class="me-2 h-10 inline-block" />Robotech
-                              Camera EDM 5D(White)
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              $50 <del class="text-gray-400">$90</del>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              450<small class="text-gray-400">(500)</small>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span
-                                class="focus:outline-none text-[12px] bg-green-600/10 text-green-700 dark:text-green-600 rounded font-medium py-1 px-2"
-                                >Stock</span
-                              >
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <a href="#"><i class="icofont-ui-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
-                              <a href="#"><i class="icofont-ui-delete text-lg text-red-500 dark:text-red-400"></i></a>
-                            </td>
-                          </tr>
-                          <!-- 2 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base font-medium whitespace-nowrap dark:text-white">
-                              <img src="assets/images/products/03.png" alt="" class="me-2 h-10 inline-block" />Robotech
-                              VR 5D (Black)
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              $39 <del class="text-gray-400">$99</del>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              700<small class="text-gray-400">(700)</small>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span
-                                class="focus:outline-none text-[12px] bg-red-500/10 text-red-700 dark:text-red-400 rounded font-medium py-1 px-2"
-                                >Sold</span
-                              >
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <a href="#"><i class="icofont-ui-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
-                              <a href="#"><i class="icofont-ui-delete text-lg text-red-500 dark:text-red-400"></i></a>
-                            </td>
-                          </tr>
-                          <!-- 3 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base font-medium whitespace-nowrap dark:text-white">
-                              <img src="assets/images/products/02.png" alt="" class="me-2 h-10 inline-block" />Robotech
-                              Shoes Max-Zon
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              $49 <del class="text-gray-400">$88</del>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              850<small class="text-gray-400">(900)</small>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span
-                                class="focus:outline-none text-[12px] bg-green-600/10 text-green-700 dark:text-green-600 rounded font-medium py-1 px-2"
-                                >Stock</span
-                              >
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <a href="#"><i class="icofont-ui-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
-                              <a href="#"><i class="icofont-ui-delete text-lg text-red-500 dark:text-red-400"></i></a>
-                            </td>
-                          </tr>
-                          <!-- 4 -->
-                          <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
-                            <td class="p-3 text-base font-medium whitespace-nowrap dark:text-white">
-                              <img src="assets/images/products/04.png" alt="" class="me-2 h-10 inline-block" />Robotech
-                              Mask N99 [ISI]
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              $5 <del class="text-gray-400">$9</del>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              1850<small class="text-gray-400">(2000)</small>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span
-                                class="focus:outline-none text-[12px] bg-green-600/10 text-green-700 dark:text-green-600 rounded font-medium py-1 px-2"
-                                >Stock</span
-                              >
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <a href="#"><i class="icofont-ui-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
-                              <a href="#"><i class="icofont-ui-delete text-lg text-red-500 dark:text-red-400"></i></a>
-                            </td>
-                          </tr>
-                          <!-- 5 -->
-                          <tr class="bg-white dark:bg-gray-900">
-                            <td class="p-3 text-base font-medium whitespace-nowrap dark:text-white">
-                              <img src="assets/images/products/01.png" alt="" class="me-2 h-10 inline-block" />Robotech
-                              Camera EDM 5D(White)
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              $50 <del class="text-gray-400">$90</del>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              450<small class="text-gray-400">(500)</small>
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <span
-                                class="focus:outline-none text-[12px] bg-red-500/10 text-red-700 dark:text-red-400 rounded font-medium py-1 px-2"
-                                >Sold</span
-                              >
-                            </td>
-                            <td class="p-3 text-base text-gray-500 whitespace-nowrap dark:text-gray-400">
-                              <a href="#"><i class="icofont-ui-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
-                              <a href="#"><i class="icofont-ui-delete text-lg text-red-500 dark:text-red-400"></i></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <div class="flex-auto p-4">
+                  <div id="line_2" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-2"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+&lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- HTML --&gt;
+ &lt;div id=&quot;line_2&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Init js --&gt;
+var chartDom = document.getElementById('line_2');
+var myChart = echarts.init(chartDom);
+var option;
+
+let base = +new Date(1968, 9, 3);
+let oneDay = 24 * 3600 * 1000;
+let date = [];
+let data = [Math.random() * 300];
+for (let i = 1; i &lt; 20000; i++) {
+  var now = new Date((base += oneDay));
+  date.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
+  data.push(Math.round((Math.random() - 0.5) * 20 + data[i - 1]));
+}
+option = {
+  tooltip: {
+    trigger: 'axis',
+    position: function (pt) {
+      return [pt[0], '10%'];
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: date
+  },
+  yAxis: {
+    type: 'value',
+    boundaryGap: [0, '100%']
+  },
+  dataZoom: [
+    {
+      type: 'inside',
+      start: 0,
+      end: 10
+    },
+    {
+      start: 0,
+      end: 10
+    }
+  ],
+  series: [
+    {
+      name: 'Fake Data',
+      type: 'line',
+      symbol: 'none',
+      sampling: 'lttb',
+      itemStyle: {
+        color: 'rgb(255, 70, 131)'
+      },
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: 'rgb(255, 158, 68)'
+          },
+          {
+            offset: 1,
+            color: 'rgb(255, 70, 131)'
+          }
+        ])
+      },
+      data: data
+    }
+  ]
+};
+
+option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Bar Chart-1</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-3"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
                     </div>
+                  </div>
+                </div>
+                <!--end header-title-->
+                <div class="flex-auto p-4">
+                  <div id="bar_1" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-3"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">                                       
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+     &lt;div id=&quot;bar_1&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    // Bar
+    var chartDom = document.getElementById('bar_1');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          data: [120, 200, 150, 80, 70, 110, 130],
+          type: 'bar',
+          showBackground: true,
+          backgroundStyle: {
+            color: 'rgba(180, 180, 180, 0.2)'
+          }
+        }
+      ]
+    };
+    
+    option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Bar Chart-2</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-4"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--end header-title-->
+                <div class="flex-auto p-4">
+                  <div id="bar_2" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-4"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+     &lt;div id=&quot;bar_2&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    
+    var chartDom = document.getElementById('bar_2');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'cross',
+          crossStyle: {
+            color: '#999'
+          }
+        }
+      },
+      toolbox: {
+        feature: {
+          dataView: { show: true, readOnly: false },
+          magicType: { show: true, type: ['line', 'bar'] },
+          restore: { show: true },
+          saveAsImage: { show: true }
+        }
+      },
+      legend: {
+        data: ['Evaporation', 'Precipitation', 'Temperature']
+      },
+      xAxis: [
+        {
+          type: 'category',
+          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          axisPointer: {
+            type: 'shadow'
+          }
+        }
+      ],
+      yAxis: [
+        {
+          type: 'value',
+          name: 'Precipitation',
+          min: 0,
+          max: 250,
+          interval: 50,
+          axisLabel: {
+            formatter: '{value} ml'
+          }
+        },
+        {
+          type: 'value',
+          name: 'Temperature',
+          min: 0,
+          max: 25,
+          interval: 5,
+          axisLabel: {
+            formatter: '{value} &Atilde;&sbquo;&Acirc;&deg;C'
+          }
+        }
+      ],
+      series: [
+        {
+          name: 'Evaporation',
+          type: 'bar',
+          tooltip: {
+            valueFormatter: function (value) {
+              return value + ' ml';
+            }
+          },
+          data: [
+            2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3
+          ]
+        },
+        {
+          name: 'Precipitation',
+          type: 'bar',
+          tooltip: {
+            valueFormatter: function (value) {
+              return value + ' ml';
+            }
+          },
+          data: [
+            2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3
+          ]
+        },
+        {
+          name: 'Temperature',
+          type: 'line',
+          yAxisIndex: 1,
+          tooltip: {
+            valueFormatter: function (value) {
+              return value + ' &Atilde;&sbquo;&Acirc;&deg;C';
+            }
+          },
+          data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+        }
+      ]
+    };
+    
+    option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Bar Chart-3</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-5"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--end header-title-->
+                <div class="flex-auto p-4">
+                  <div id="bar_3" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-5"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+     &lt;div id=&quot;bar_3&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    
+    var chartDom = document.getElementById('bar_3');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      legend: {},
+      tooltip: {},
+      dataset: {
+        source: [
+          ['product', '2015', '2016', '2017'],
+          ['Matcha Latte', 43.3, 85.8, 93.7],
+          ['Milk Tea', 83.1, 73.4, 55.1],
+          ['Cheese Cocoa', 86.4, 65.2, 82.5],
+          ['Walnut Brownie', 72.4, 53.9, 39.1]
+        ]
+      },
+      xAxis: { type: 'category' },
+      yAxis: {},
+      // Declare several bar series, each will be mapped
+      // to a column of dataset.source by default.
+      series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
+    };
+    
+    option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Bar Chart-4</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-6"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--end header-title-->
+                <div class="flex-auto p-4">
+                  <div id="bar_4" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-6"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+     &lt;div id=&quot;bar_4&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    
+    var chartDom = document.getElementById('bar_4');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        }
+      },
+      legend: {
+        data: ['Profit', 'Expenses', 'Income']
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: [
+        {
+          type: 'value'
+        }
+      ],
+      yAxis: [
+        {
+          type: 'category',
+          axisTick: {
+            show: false
+          },
+          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        }
+      ],
+      series: [
+        {
+          name: 'Profit',
+          type: 'bar',
+          label: {
+            show: true,
+            position: 'inside'
+          },
+          emphasis: {
+            focus: 'series'
+          },
+          data: [200, 170, 240, 244, 200, 220, 210]
+        },
+        {
+          name: 'Income',
+          type: 'bar',
+          stack: 'Total',
+          label: {
+            show: true
+          },
+          emphasis: {
+            focus: 'series'
+          },
+          data: [320, 302, 341, 374, 390, 450, 420]
+        },
+        {
+          name: 'Expenses',
+          type: 'bar',
+          stack: 'Total',
+          label: {
+            show: true,
+            position: 'left'
+          },
+          emphasis: {
+            focus: 'series'
+          },
+          data: [-120, -132, -101, -134, -190, -230, -210]
+        }
+      ]
+    };
+    
+    option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Pie Chart-1</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-7"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--end header-title-->
+                <div class="flex-auto p-4">
+                  <div id="pie_1" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-7"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+    &lt;div id=&quot;pie_1&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    
+    var chartDom = document.getElementById('pie_1');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      title: {
+        text: 'Referer of a Website',
+        subtext: 'Fake Data',
+        left: 'center'
+      },
+      tooltip: {
+        trigger: 'item'
+      },
+      legend: {
+        orient: 'vertical',
+        left: 'left'
+      },
+      series: [
+        {
+          name: 'Access From',
+          type: 'pie',
+          radius: '50%',
+          data: [
+            { value: 1048, name: 'Search Engine' },
+            { value: 735, name: 'Direct' },
+            { value: 580, name: 'Email' },
+            { value: 484, name: 'Union Ads' },
+            { value: 300, name: 'Video Ads' }
+          ],
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        }
+      ]
+    };
+    
+    option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Pie Chart-2</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-8"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--end header-title-->
+                <div class="flex-auto p-4">
+                  <div id="pie_2" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-8"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+    &lt;div id=&quot;pie_2&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    
+    var chartDom = document.getElementById('pie_2');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      tooltip: {
+        trigger: 'item'
+      },
+      legend: {
+        top: '5%',
+        left: 'center'
+      },
+      series: [
+        {
+          name: 'Access From',
+          type: 'pie',
+          radius: ['40%', '70%'],
+          avoidLabelOverlap: false,
+          itemStyle: {
+            borderRadius: 10,
+            borderColor: '#fff',
+            borderWidth: 2
+          },
+          label: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            label: {
+              show: true,
+              fontSize: '40',
+              fontWeight: 'bold'
+            }
+          },
+          labelLine: {
+            show: false
+          },
+          data: [
+            { value: 1048, name: 'Search Engine' },
+            { value: 735, name: 'Direct' },
+            { value: 580, name: 'Email' },
+            { value: 484, name: 'Union Ads' },
+            { value: 300, name: 'Video Ads' }
+          ]
+        }
+      ]
+    };
+    
+    option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="border-b border-slate-200 dark:border-slate-700/40 py-3 px-4 dark:text-slate-300/70">
+                  <div class="flex-none md:flex">
+                    <h4 class="font-medium text-lg flex-1 self-center mb-2 md:mb-0">Pie Chart-3</h4>
+                    <div class="dropdown inline-block">
+                      <button
+                        data-fc-type="collapse"
+                        data-fc-target="Echarts-9"
+                        class="dropdown-toggle px-3 py-1 text-xs font-medium text-gray-500 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-50 hover:text-slate-800 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        type="button"
+                      >
+                        <i class="fas fa-code text-xs me-2"></i> Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--end header-title-->
+                <div class="flex-auto p-4">
+                  <div id="pie_3" class="h-80"></div>
+                </div>
+                <!--end card-body-->
+
+                <div
+                  id="Echarts-9"
+                  class="transition-all duration-500 overflow-hidden bg-slate-50 dark:bg-slate-900 hidden"
+                >
+                  <div class="grid">
+                    <pre class="max-h-96 overflow-auto rounded-lg">
+<code class="language-html">
+    &lt;!-- JS --&gt;
+    &lt;script src=&quot;assets/libs/echarts/echarts.min.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- HTML --&gt;
+    &lt;div id=&quot;pie_3&quot; class=&quot;h-80&quot;&gt;&lt;/div&gt;
+    
+    &lt;!-- Init js --&gt;
+    
+    var chartDom = document.getElementById('pie_3');
+    var myChart = echarts.init(chartDom);
+    var option;
+    
+    option = {
+      legend: {
+        top: 'bottom'
+      },
+      toolbox: {
+        show: true,
+        feature: {
+          mark: { show: true },
+          dataView: { show: true, readOnly: false },
+          restore: { show: true },
+          saveAsImage: { show: true }
+        }
+      },
+      series: [
+        {
+          name: 'Nightingale Chart',
+          type: 'pie',
+          radius: [50, 120],
+          center: ['50%', '50%'],
+          roseType: 'area',
+          itemStyle: {
+            borderRadius: 8
+          },
+          data: [
+            { value: 40, name: 'rose 1' },
+            { value: 38, name: 'rose 2' },
+            { value: 32, name: 'rose 3' },
+            { value: 30, name: 'rose 4' },
+            { value: 28, name: 'rose 5' },
+            { value: 26, name: 'rose 6' },
+            { value: 22, name: 'rose 7' },
+            { value: 18, name: 'rose 8' }
+          ]
+        }
+      ]
+    };
+    
+    option &amp;&amp; myChart.setOption(option);
+</code>
+</pre>
+                  </div>
+                </div>
+              </div>
+              <!--end card-->
+              <div
+                class="bg-white dark:bg-gray-900 border border-slate-200 dark:border-slate-700/40 rounded-md w-full relative mb-4"
+              >
+                <div class="flex-auto p-4">
+                  <h3
+                    class="text-slate-800 dark:text-slate-400 text-center text-2xl md:text-2xl lg:text-lg xl:text-2xl font-bold leading-8 py-2 md:py-2 lg:py-1 xl:py-2"
+                  >
+                    You can use more echarts.
+                  </h3>
+                  <div class="my-4 text-center">
+                    <a
+                      href="https://echarts.apache.org/examples/en/index.html"
+                      target="_blank"
+                      class="px-3 py-2 lg:px-4 bg-primary-500 text-white text-sm font-semibold rounded hover:bg-primary-600"
+                      >More Charts</a
+                    >
                   </div>
                 </div>
                 <!--end card-body-->
@@ -2224,7 +2608,9 @@
         </div>
         <!--end container-->
       </div>
+      <!--end page-wrapper-->
     </div>
+    <!--end /div-->
 
     <!-- JAVASCRIPTS -->
     <!-- <div class="menu-overlay"></div> -->
@@ -2233,8 +2619,9 @@
     <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
     <script src="assets/libs/@frostui/tailwindcss/frostui.js"></script>
 
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/js/pages/analytics-index.init.js"></script>
+    <script src="assets/libs/prismjs/prism.js"></script>
+    <script src="assets/libs/echarts/echarts.min.js"></script>
+    <script src="assets/js/pages/echarts.init.js"></script>
     <script src="assets/js/app.js"></script>
     <!-- JAVASCRIPTS -->
   </body>
